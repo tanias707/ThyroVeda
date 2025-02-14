@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ThyroVeda - FAQs</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f0f8ff;
+            text-align: center;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            margin: auto;
+            text-align: left;
+        }
+        h1 {
+            color: #004080;
+            text-align: center;
+        }
+        .faq {
+            margin-bottom: 15px;
+        }
+        .faq h3 {
+            color: #0080ff;
+            cursor: pointer;
+        }
+        .faq p {
+            display: none;
+            font-size: 16px;
+        }
+    </style>
+    <script>
+        function toggleAnswer(id) {
+            var answer = document.getElementById(id);
+            if (answer.style.display === "none") {
+                answer.style.display = "block";
+            } else {
+                answer.style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Frequently Asked Questions</h1>
+        
+        <div class="faq">
+            <h3 onclick="toggleAnswer('faq1')">Is ThyroVeda a replacement for doctor consultations?</h3>
+            <p id="faq1">No, ThyroVeda is not a substitute for medical advice. It enhances healthcare accessibility by offering data-driven insights, but we recommend consulting a doctor for diagnosis and treatment.</p>
+        </div>
+        
+        <div class="faq">
+            <h3 onclick="toggleAnswer('faq2')">How does AI analyze my thyroid health?</h3>
+            <p id="faq2">Our AI scans your blood test reports, symptom logs, and lifestyle data to detect hormone fluctuations, risk factors, and deficiencies. It then provides tailored recommendations for diet, lifestyle, and health tracking.</p>
+        </div>
+        
+        <div class="faq">
+            <h3 onclick="toggleAnswer('faq3')">How do I upload my blood test reports?</h3>
+            <p id="faq3">You can upload your report in PDF or image format through the dashboard. Our AI will analyze it and generate insights within seconds.</p>
+        </div>
+        
+        <div class="faq">
+            <h3 onclick="toggleAnswer('faq4')">Is my health data safe and private?</h3>
+            <p id="faq4">Yes! ThyroVeda prioritizes data security with end-to-end encryption and follows strict privacy policies. Your data is never shared without your consent.</p>
+        </div>
+    </div>
+</body>
+</html>

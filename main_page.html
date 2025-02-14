@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ThyroVeda - Home</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            background-color: #f0f8ff;
+            color: #333;
+        }
+
+        /* Sidebar Navigation */
+        .sidebar {
+            width: 200px;
+            background-color: #004080;
+            color: white;
+            height: 100vh;
+            padding: 15px;
+            position: fixed;
+        }
+
+        .sidebar h2 {
+            text-align: center;
+            font-size: 18px;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar ul li {
+            padding: 8px 0;
+        }
+
+        .sidebar ul li a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            font-size: 14px;
+        }
+
+        /* Main Content */
+        .main-content {
+            margin-left: 220px;
+            padding: 40px;
+            width: calc(100% - 220px);
+        }
+
+        /* Home Page Styling */
+        #home {
+            text-align: center;
+            background-color: #e6f2ff;
+            padding: 50px;
+            border-radius: 10px;
+        }
+
+        button {
+            background-color: #0080ff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar">
+        <h2>Dashboard</h2>
+        <nav>
+            <ul>
+                <li><a href="index.html" target="_self">Home</a></li>
+                <li><a href="test-analysis.html" target="_blank">Test Analysis</a></li>
+                <li><a href="symptom-analyzer.html" target="_blank">Symptom Analyzer</a></li>
+                <li><a href="chatbot.html" target="_blank">AI Chatbot</a></li>
+                <li><a href="consult.html" target="_blank">Consult a Doctor</a></li>
+                <li><a href="community.html" target="_blank">Community</a></li>
+                <li><a href="diet.html" target="_blank">Diet Plan</a></li>
+                <li><a href="progress.html" target="_blank">Progress</a></li>
+                <li><a href="account.html" target="_blank">My Account</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <section id="home">
+            <h1>Welcome to ThyroVeda</h1>
+            <p>Your AI-powered thyroid health companion.</p>
+            <button onclick="window.open('test-analysis.html', '_blank')">Analyze Report</button>
+            <button onclick="window.open('chatbot.html', '_blank')">Ask AI Chatbot</button>
+            <button onclick="window.open('consult.html', '_blank')">Consult a Doctor</button>
+        </section>
+    </main>
+</body>
+</html>
