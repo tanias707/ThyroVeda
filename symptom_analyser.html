@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ThyroVeda - Symptom Analyzer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f0f8ff;
+            text-align: center;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: auto;
+        }
+        .symptom-list {
+            text-align: left;
+            display: inline-block;
+            width: 100%;
+        }
+        .symptom-list label {
+            display: block;
+            padding: 5px;
+            font-size: 16px;
+        }
+        .severity {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        select {
+            padding: 5px;
+            font-size: 14px;
+        }
+        button {
+            background-color: #0080ff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Symptom Analyzer</h1>
+        <p>Select the symptoms you're experiencing and their severity level:</p>
+        
+        <form id="symptom-form">
+            <div class="symptom-list">
+                <label>
+                    <input type="checkbox" name="symptom" value="Fatigue"> Fatigue
+                    <span class="severity">
+                        <label>Severity: </label>
+                        <select name="fatigue-severity">
+                            <option value="mild">Mild</option>
+                            <option value="moderate">Moderate</option>
+                            <option value="severe">Severe</option>
+                        </select>
+                    </span>
+                </label>
+
+                <label>
+                    <input type="checkbox" name="symptom" value="Hair Loss"> Hair Loss
+                    <span class="severity">
+                        <label>Severity: </label>
+                        <select name="hairloss-severity">
+                            <option value="mild">Mild</option>
+                            <option value="moderate">Moderate</option>
+                            <option value="severe">Severe</option>
+                        </select>
+                    </span>
+                </label>
+
+                <label>
+                    <input type="checkbox" name="symptom" value="Weight Gain"> Weight Gain
+                    <span class="severity">
+                        <label>Severity: </label>
+                        <select name="weightgain-severity">
+                            <option value="mild">Mild</option>
+                            <option value="moderate">Moderate</option>
+                            <option value="severe">Severe</option>
+                        </select>
+                    </span>
+                </label>
+
+                <label>
+                    <input type="checkbox" name="symptom" value="Brain Fog"> Brain Fog
+                    <span class="severity">
+                        <label>Severity: </label>
+                        <select name="brainfog-severity">
+                            <option value="mild">Mild</option>
+                            <option value="moderate">Moderate</option>
+                            <option value="severe">Severe</option>
+                        </select>
+                    </span>
+                </label>
+            </div>
+
+            <button type="submit">Analyze Symptoms</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('symptom-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Symptoms submitted for analysis!');
+        });
+    </script>
+</body>
+</html>
+
