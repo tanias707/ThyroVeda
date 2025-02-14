@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ThyroVeda - Medication Tracker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f0f8ff;
+            text-align: center;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: auto;
+        }
+        .med-list {
+            text-align: left;
+            display: inline-block;
+            width: 100%;
+        }
+        .med-card {
+            background: #e6f2ff;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+        button {
+            background-color: #0080ff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Medication Tracker</h1>
+        <p>Manage your thyroid medications and get reminders</p>
+        
+        <div class="med-list">
+            <div class="med-card">
+                <h3>Levothyroxine</h3>
+                <p>Dosage: 50 mcg</p>
+                <p>Time: 8:00 AM</p>
+                <button>Mark as Taken</button>
+            </div>
+            
+            <div class="med-card">
+                <h3>Liothyronine</h3>
+                <p>Dosage: 25 mcg</p>
+                <p>Time: 12:00 PM</p>
+                <button>Mark as Taken</button>
+            </div>
+            
+            <div class="med-card">
+                <h3>Thyroid Extract</h3>
+                <p>Dosage: 1 Capsule</p>
+                <p>Time: 6:00 PM</p>
+                <button>Mark as Taken</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
